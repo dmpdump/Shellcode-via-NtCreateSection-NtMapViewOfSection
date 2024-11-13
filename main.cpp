@@ -119,7 +119,6 @@ int main()
         return 1;
     }
 
-
     SIZE_T bytesWritten;
     if (!WriteProcessMemory(pi.hProcess, baseAddress, pload, sizeof(pload), &bytesWritten)) {
         printf("WriteProcessMemory failed: %d\n", GetLastError());
